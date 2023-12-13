@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+      <h1>Pet Services</h1>
+      <nav>
+          <ul>
+              <li><a href="blog.html">Blog</a></li>
+ 	      <li><a href="pet-services.html">Pet Services</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+      <section id="grooming">
+          <h2>Grooming Services</h2>
+          <p>Keep your pets looking their best with our professional grooming services. Our experienced groomers provide a range of services to cater to your pet's needs.</p>
+          <div class="grid-container">
+              <div class="grooming-service">
+                  <img src="https://source.unsplash.com/300x200/?cat,grooming1" alt="Full Grooming Package">
+                  <h3>Full Grooming Package</h3>
+                  <p>Includes bath, haircut, nail trimming, and ear cleaning.</p>
+              </div>
+              <div class="grooming-service">
+                  <img src="https://source.unsplash.com/300x200/?cat,grooming2" alt="Bath and Brush">
+                  <h3>Bath and Brush</h3>
+                  <p>Refreshing bath, brushing, and light trimming.</p>
+              </div>
+              <div class="grooming-service">
+                  <img src="https://source.unsplash.com/300x200/?cat,grooming3" alt="Nail Clipping">
+                  <h3>Nail Clipping</h3>
+                  <p>Professional nail trimming for your pet's comfort.</p>
+              </div>
+              <div class="grooming-service">
+                  <img src="https://source.unsplash.com/300x200/?cat,grooming4" alt="Specialty Grooming">
+                  <h3>Specialty Grooming</h3>
+                  <p>Customized grooming services based on your pet's needs.</p>
+              </div>
+          </div>
+      </section>
+
+      <!-- ... (similar modifications for Pets Hotel and Pet Day Camp sections) -->
+
+  </main>
+
+  <footer>
+      <p>&copy; 2023 Pet Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+      $(document).ready(function() {
+          // jQuery code for handling interactions
+          $('.collapsible').accordion({
+              collapsible: true,
+              heightStyle: 'content'
+          });
+
+          $('.collapsible-set').accordion({
+              collapsible: true,
+              heightStyle: 'content'
+          });
+      });
+  </script>
+</body>
+</html>

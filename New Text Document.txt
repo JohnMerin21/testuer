@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+      <h1>Pet Services</h1>
+      <nav>
+          <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+      <section id="grooming">
+          <h2>Grooming Services</h2>
+          <div class="grid-container">
+              <div>Grooming Service 1</div>
+              <div>Grooming Service 2</div>
+              <div>Grooming Service 3</div>
+              <div>Grooming Service 4</div>
+          </div>
+      </section>
+
+      <section id="hotel">
+          <h2>Pets Hotel</h2>
+          <div class="collapsible">
+              <h3>Hotel Room 1</h3>
+              <div>
+                  <p>Details about Hotel Room 1</p>
+              </div>
+              <h3>Hotel Room 2</h3>
+              <div>
+                  <p>Details about Hotel Room 2</p>
+              </div>
+          </div>
+      </section>
+
+      <section id="dayCamp">
+          <h2>Pet Day Camp</h2>
+          <div class="collapsible-set">
+              <h3>Day Camp Session 1</h3>
+              <div>
+                  <p>Details about Day Camp Session 1</p>
+              </div>
+              <h3>Day Camp Session 2</h3>
+              <div>
+                  <p>Details about Day Camp Session 2</p>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+      <p>&copy; 2023 Pet Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+      $(document).ready(function() {
+          // jQuery code for handling interactions
+          $('.collapsible').accordion({
+              collapsible: true,
+              heightStyle: 'content'
+          });
+
+          $('.collapsible-set').accordion({
+              collapsible: true,
+              heightStyle: 'content'
+          });
+      });
+  </script>
+</body>
+</html>
